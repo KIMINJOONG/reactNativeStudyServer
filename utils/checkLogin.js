@@ -9,6 +9,6 @@ export const isLoggedIn = async(req, res, next) => {
             next();
         }
     } else {
-        res.status(401).send('로그인을 해주세요.');
+        res.send('로그인을 해주세요.');
     }
 }
